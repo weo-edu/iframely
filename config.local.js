@@ -93,8 +93,8 @@
                 enabled: false
             },
             images: {
-                loadSize: false, // if true, will try an load first bytes of all images to get/confirm the sizes
-                checkFavicon: false // if true, will verify all favicons
+                loadSize: true, // if true, will try an load first bytes of all images to get/confirm the sizes
+                checkFavicon: true // if true, will verify all favicons
             },
             tumblr: {
                 consumer_key: "w3Iuly7wcJzrNWgDq0homJJT9MsA0KUq3Wx2PsBOjCEMmOIL9J"
@@ -119,7 +119,7 @@
         WHITELIST_WILDCARD: {
               "twitter": {
                 "player": "allow",
-                "photo": "deny"
+                "photo": "allow"
               },
               "oembed": {
                 "video": "allow",
@@ -137,7 +137,8 @@
                 "image": "allow",
               },
               "html-meta": {
-                "video": ["allow", "responsive"]
+                "video": ["allow", "responsive"],
+                "image": "allow"
               }
         }
     };
