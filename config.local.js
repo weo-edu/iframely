@@ -97,7 +97,7 @@
                 checkFavicon: false // if true, will verify all favicons
             },
             tumblr: {
-                consumer_key: "INSERT YOUR VALUE"
+                consumer_key: "w3Iuly7wcJzrNWgDq0homJJT9MsA0KUq3Wx2PsBOjCEMmOIL9J"
             },
 
             // List of query parameters to add to YouTube and Vimeo frames
