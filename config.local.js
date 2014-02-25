@@ -8,7 +8,7 @@
         baseAppUrl: "iframely.eos.io",
         relativeStaticUrl: "/r",
 
-        port: process.env.PORT,
+        port: process.env.PORT || 8061,
 
         // You can set your unique whitelist access url here.
         // Iframely will periodically load WL updates from remote file.
@@ -31,7 +31,7 @@
         - redis - https://github.com/mranney/node_redis.
         - memcached - https://github.com/3rd-Eden/node-memcached
         */
-        CACHE_ENGINE: 'node-cache',
+        CACHE_ENGINE: 'no-cache', //'node-cache',
         CACHE_TTL: 0, // In milliseconds. 0 for 'never expire' to let cache engine decide itself when to evict the record
 
         /*
