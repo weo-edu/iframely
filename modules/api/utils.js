@@ -348,7 +348,8 @@ exports.getOembed = function(uri, data) {
             // "player", "survey", "reader"
 
             var $el = generateLinkElement(link, {
-                iframelyData: data
+                iframelyData: data,
+                disableSizeWrapper: true
             });
 
             if (typeof $el === "string") {
