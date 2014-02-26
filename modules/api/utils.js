@@ -298,7 +298,7 @@ exports.getOembed = function(uri, data) {
         delete data.meta.site;
     }
 
-    var thumbnails = filterLinksByRel("thumbnail", data.links);
+    var thumbnails = filterLinksByRel(["thumbnail", "icon"], data.links);
     // Find largest.
     var maxW = 0, thumbnail;
     thumbnails && thumbnails.forEach(function(t) {
